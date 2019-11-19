@@ -21,10 +21,10 @@
 
   <!-- On windows we can build cross-platform netstandard and windows-only netframework.-->
   <PropertyGroup Condition=" '$(OS)' != 'Windows_NT' And '$(OS)' != 'Windows' ">
-    <TargetFrameworks>netstandard2.1;netstandard2.0</TargetFrameworks>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(OS)' == 'Windows_NT' Or '$(OS)' == 'Windows' ">
-    <TargetFrameworks>netstandard2.1;netstandard2.0;net452</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0;net452</TargetFrameworks>
   </PropertyGroup>
 
   <ItemGroup>
